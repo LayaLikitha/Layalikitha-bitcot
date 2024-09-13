@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts View</title>
+    <style>
+        .search{
+            /* height: 100%; */
+            width: 80%;
+            padding: 10px;
+            bottom: 20px;
+            border-radius: 5px;
+            margin: 5px 20px 5px 40px;
+            border: solid;
+            font-size: 16px;
+        }
+        .label{
+            margin-bottom: 10px;
+            padding-left: 180px;
+            border-radius:10px ;
+            background-color: skyblue;
+            display: flex;
+        }
+        .label1{
+            background-color: white;
+            padding: 20px;
+        }
+        .img {
+            padding-top: 15px;
+            width:40px;
+            height: 40px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="background-color:black;width: 500px;height: 500px;padding:10px;border-radius: 5px;">
+        <div class="label">
+            <h2 style="color: white;">All Contacts</h2> 
+            <a href="Add_Contact.html"><img class="img" src="images/plus_icon-removebg-preview.png"></a>
+        </div>
+        <div>
+            <input class="search", placeholder="search contact", type="search">
+        </div> <br>     
+        <div class="label1">
+            <span style="padding-right: 30px;padding-bottom: 20px; font-size: large;">1</span><img src="images/user.png" style="width: 20px; height: 20px;"><span style="padding-right: 30px;padding-left: 20px;">Aaron 5785664545</span><a href="Contact_Details.html"><img src="images/view icon.jpg" style="width: 20px; height: 20px;padding-left: 90px;"></a><img src="images/bin.png" style="width: 20px; height: 20px;padding-left: 30px;"></a><a href="Edit_Contact.html"><img src="images/edit.png" style="width: 20px; height: 20px;padding-left: 30px;"></a>
+        </div>
+        <br>
+        <div class="label1">
+            <span style="padding-right: 30px;padding-bottom: 20px; font-size: large;">2</span><img src="images/user.png" style="width: 20px; height: 20px;"><span style="padding-right: 30px;padding-left: 20px;">Buincy Henson 5862165454</span><a href="ContactDetail1.html"><img src="images/view icon.jpg" style="width: 20px; height: 20px;padding-left: 30px;"></a><img src="images/bin.png" style="width: 20px; height: 20px;padding-left: 30px;"></a><a href="Edit_Contact.html"><img src="images/edit.png" style="width: 20px; height: 20px;padding-left: 30px;"></a>
+        </div>
+        <br>
+        <div class="label1">
+            <span style="padding-right: 30px;padding-bottom: 20px; font-size: large;">3</span><img src="images/user.png" style="width: 20px; height: 20px;"><span style="padding-right: 30px;padding-left: 20px;">Hanna Donovan 6365425254</span><a href="ContactDetails2.html"><img src="images/view icon.jpg" style="width: 20px; height: 20px;padding-left: 30px;"></a><img src="images/bin.png" style="width: 20px; height: 20px;padding-left: 30px;"></a><a href="Edit_Contact.html"><img src="images/edit.png" style="width: 20px; height: 20px;padding-left: 30px;"></a>
+        </div>
+
+        <!-- <script>
+
+            main();
+            async function main() {
+                const sample = await getData();
+                const sampleUl = document.querySelector("#sample");
+                for(const samples of sample) {
+                    sampleUl.innerHTML += `<li>${sample.id}</li>`;
+                    sampleUl.innerHTML += `<li>${sample.name}</li>`;
+                    sampleUl.innerHTML += `<li>${sample.mobile}</li>`;
+                    sampleUl.innerHTML += `<li>${sample.email}</li>`;
+                }
+            }
+            
+            async function getData() {
+                const res = await fetch("sample.json");
+                const data = await res.json();
+
+                return data;
+            }
+        </script>
+         -->
+    </div>
+</body>
+</html>
